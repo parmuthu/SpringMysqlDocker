@@ -27,8 +27,8 @@ services:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/saidb
       SPRING_DATASOURCE_USERNAME: sa
       SPRING_DATASOURCE_PASSWORD: 1234
-      MAVEN_HOME=D:\apache-maven-3.6.3-bin\apache-maven-3.6.3
-      PATH=D:\apache-maven-3.6.3-bin\apache-maven-3.6.3:$PATH
+      MAVEN_HOME: D:\apache-maven-3.6.3-bin\apache-maven-3.6.3
+      PATH: D:\apache-maven-3.6.3-bin\apache-maven-3.6.3:$PATH
     networks:
       - sqlnetwork1  
 networks:
