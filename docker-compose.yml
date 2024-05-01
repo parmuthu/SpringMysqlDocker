@@ -10,6 +10,8 @@ services:
       - sqlnetwork1  
 
     environment:
+      MAVEN_HOME: D:\apache-maven-3.6.3-bin\apache-maven-3.6.3
+      
       MYSQL_ROOT_PASSWORD: 1234
       MYSQL_DATABASE: saidb
       MYSQL_USER: sa
