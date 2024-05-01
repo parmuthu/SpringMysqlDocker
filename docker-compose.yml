@@ -3,11 +3,11 @@ version: '3.8'
 services:
   mysql:
     image: mysql:latest
-    container_name: mysql_db
+    container_name: mysql_db1
     ports:
       - "3307:3306"
     networks:
-      - sqlnetwork  
+      - sqlnetwork1  
 
     environment:
       MYSQL_ROOT_PASSWORD: 1234
@@ -28,6 +28,6 @@ services:
       SPRING_DATASOURCE_USERNAME: sa
       SPRING_DATASOURCE_PASSWORD: 1234
     networks:
-      - sqlnetwork  
+      - sqlnetwork1  
 networks:
-  sqlnetwork:
+  sqlnetwork1:
