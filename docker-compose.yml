@@ -1,9 +1,6 @@
  version: '3.8'
-
-
-  services:
-  
-  react-front-end:
+ services:
+    react-front-end:
     image: "reactapp"
     container_name: react_container
     ports:
