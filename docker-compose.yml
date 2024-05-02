@@ -1,6 +1,7 @@
 version: '3.8'
 
 services:
+<<<<<<< HEAD
   
   mysql:
     image: mysql:latest
@@ -9,8 +10,26 @@ services:
       - "3307:3306"
     networks:
       - sqlnetworknew 
+=======
+  react-front-end:
+    image: "reactapp"
+    container_name: react_container
+    ports:
+      - "3001:3000"
+    links:
+      - springbootapp
+  mysql:
+    image: mysql:latest
+    container_name: mysql_db1
+    ports:
+      - "3307:3306"
+    networks:
+      - sqlnetwork1  
+>>>>>>> 532fece224275f616e8480c4f8f4ff4d67e7ee52
 
     environment:
+      
+      
       MYSQL_ROOT_PASSWORD: 1234
       MYSQL_DATABASE: saidb
       MYSQL_USER: sa
@@ -29,6 +48,7 @@ services:
       SPRING_DATASOURCE_USERNAME: sa
       SPRING_DATASOURCE_PASSWORD: 1234
     networks:
+<<<<<<< HEAD
       - sqlnetworknew 
   react-front-end:
     image: "reactapp"
@@ -39,3 +59,8 @@ services:
       - springbootapp
 networks:
   sqlnetworknew:
+=======
+      - sqlnetwork1  
+networks:
+  sqlnetwork1:
+>>>>>>> 532fece224275f616e8480c4f8f4ff4d67e7ee52
