@@ -34,8 +34,8 @@ services:
       - "9080:9080"
     depends_on:
       - mysql
-    networks:
-      - sqlnetworknew
+networks:
+  - sqlnetworknew
 
 
   networks:
