@@ -8,7 +8,7 @@
     links:
       - springbootapp
 
-  mysql:
+    mysql:
     image: mysql:latest
     container_name: mysql_db1
     ports:
