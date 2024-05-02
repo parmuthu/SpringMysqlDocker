@@ -1,16 +1,8 @@
-version: '3.8'
+ version: '3.8'
 
-services:
 
   
-  mysql:
-    image: mysql:latest
-    container_name: mysql_fstack
-    ports:
-      - "3307:3306"
-    networks:
-      - sqlnetworknew 
-
+  
   react-front-end:
     image: "reactapp"
     container_name: react_container
@@ -18,13 +10,14 @@ services:
       - "3001:3000"
     links:
       - springbootapp
+
   mysql:
     image: mysql:latest
     container_name: mysql_db1
     ports:
       - "3307:3306"
     networks:
-      - sqlnetworknew  
+      - sqlnetworknew 
 
 
     environment:
@@ -50,15 +43,11 @@ services:
     networks:
 
       - sqlnetworknew 
-  react-front-end:
-    image: "reactapp"
-    container_name: react_container
-    ports:
-      - "3001:3000"
-    links:
-      - springbootapp
-networks:
-  
 
-      - sqlnetworknew  
+
+networks:
+  sqlnetworknew:
+
+       
+
 
