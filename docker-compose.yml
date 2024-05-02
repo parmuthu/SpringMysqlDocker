@@ -24,7 +24,7 @@ services:
     ports:
       - "3307:3306"
     networks:
-      - sqlnetwork1  
+      - sqlnetworknew  
 
 
     environment:
@@ -58,9 +58,9 @@ services:
     links:
       - springbootapp
 networks:
-  sqlnetworknew:
+  
 
-      - sqlnetwork1  
+      - sqlnetworknew  
 networks:
-  sqlnetwork1:
+  sqlnetworknew:
 
