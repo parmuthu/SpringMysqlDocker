@@ -3,14 +3,14 @@ version: '3.8'
 services:
   react-front-end:
     image: "reactapp"
-    container_name: infallible_franklin
+    container_name: react_container
     ports:
-      - "3000:3000"
+      - "3001:3000"
     links:
       - springbootapp
   mysql:
     image: mysql:latest
-    container_name: mysql_db1
+    container_name: mysql_fstack
     ports:
       - "3307:3306"
     networks:

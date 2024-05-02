@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.productservice.productapp.model.Product;
 import com.productservice.productapp.service.ProductService;
 
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {
