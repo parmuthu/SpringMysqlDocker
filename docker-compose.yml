@@ -1,6 +1,13 @@
 version: '3.8'
 
 services:
+  react-front-end:
+    image: "reactapp"
+    container_name: react_container
+    ports:
+      - "3001:3000"
+    links:
+      - springbootapp
   mysql:
     image: mysql:latest
     container_name: mysql_db1
