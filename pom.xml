@@ -62,7 +62,7 @@
             <!-- Other plugin configuration -->
         </plugin>
 		</plugins>
-		<finalName>productapp</finalName>
+		<finalName>productcrudapp</finalName>
 	</build>
 
 </project>

@@ -1,13 +1,7 @@
 version: '3.8'
 
 services:
-  react-front-end:
-    image: "reactapp"
-    container_name: react_container
-    ports:
-      - "3001:3000"
-    links:
-      - springbootapp
+  
   mysql:
     image: mysql:latest
     container_name: mysql_fstack
@@ -36,5 +30,12 @@ services:
       SPRING_DATASOURCE_PASSWORD: 1234
     networks:
       - sqlnetworknew 
+  react-front-end:
+    image: "reactapp"
+    container_name: react_container
+    ports:
+      - "3001:3000"
+    links:
+      - springbootapp
 networks:
   sqlnetworknew:
