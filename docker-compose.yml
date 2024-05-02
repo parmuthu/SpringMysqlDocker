@@ -14,7 +14,7 @@ services:
     ports:
       - "3307:3306"
     networks:
-      - sqlnetwork1  
+      - sqlnetworknew 
 
     environment:
       MYSQL_ROOT_PASSWORD: 1234
@@ -35,6 +35,6 @@ services:
       SPRING_DATASOURCE_USERNAME: sa
       SPRING_DATASOURCE_PASSWORD: 1234
     networks:
-      - sqlnetwork1  
+      - sqlnetworknew 
 networks:
-  sqlnetwork1:
+  sqlnetworknew:
